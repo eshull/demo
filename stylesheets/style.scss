@@ -76,6 +76,7 @@ a {
     background-size: cover;
     margin-top: -90px;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center
   }
 
@@ -108,6 +109,31 @@ a {
     background-color: black;
   }
 
+  .blue-button {
+      width: 150px;
+      height: 35px;
+      border: none;
+      border-radius: 20px;
+      background: $saffire-blue;
+      color: white;
+      font-size: 15px;
+      margin: 20px;
+  }
+
+  .orange-button {
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background: #f26921;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+
+button:hover {
+    opacity: .75;
+}
 // Media Queries 
   @media only screen and (max-width: 960px) {
       .primary-links {
