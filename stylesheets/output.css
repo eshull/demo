@@ -19,21 +19,21 @@ nav {
   display: flex;
   flex-direction: row-reverse;
   font-family: sans-serif;
-  font-size: 18px;
-  color: white; }
+  font-size: 18px; }
 
 .primary-links > * {
-  margin-left: 10px; }
+  margin-left: 10px;
+  color: white; }
 
 .secondary-links {
   display: flex;
   flex-direction: row-reverse;
   font-family: sans-serif;
-  font-size: 14px;
-  color: white; }
+  font-size: 14px; }
 
 .secondary-links > * {
-  margin-left: 10px; }
+  margin-left: 10px;
+  color: white; }
 
 a.link:hover {
   color: blue; }
@@ -74,5 +74,18 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; }
+
+#dropdown {
+  display: none; }
+
+@media only screen and (max-width: 960px) {
+  .nav > * {
+    display: none; }
+
+  #dropdown {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: initial; } }
 
 /*# sourceMappingURL=output.css.map */

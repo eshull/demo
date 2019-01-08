@@ -94,3 +94,23 @@ a {
     color: white;
   }
 
+  #dropdown {
+      display: none;
+  }
+
+
+
+  @media only screen and (max-width: 960px) {
+      .nav > * {
+          display: none;
+      }
+
+      #dropdown {
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          display: initial;
+      }
+
+
+  }
