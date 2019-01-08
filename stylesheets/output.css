@@ -1,15 +1,19 @@
 body {
   background-color: blue;
-  margin: 0px; }
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+body, html {
+  height: 100%;
+  margin: 0; }
 
 nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 90px;
-  background-image: linear-gradient(to bottom, black, transparent);
-  color: white;
-  padding-right: 60px; }
+  color: white; }
 
 .primary-links {
   display: flex;
@@ -31,6 +35,23 @@ nav {
 
 #logo {
   position: absolute;
-  left: 40px; }
+  left: 55px;
+  top: 5px; }
+
+#main-bg {
+  background-image: url(../images/main-bg.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -90px; }
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: inherit;
+  padding-right: 40px;
+  background-image: linear-gradient(to bottom, black, transparent); }
 
 /*# sourceMappingURL=output.css.map */
