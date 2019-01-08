@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('#form').animate({width: "0px"});
     });
 
-    // nav change on scroll 
+    // header change on scroll 
     window.onscroll = function() {navChange()};
 
     var header = document.getElementById("nav");
