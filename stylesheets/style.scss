@@ -27,6 +27,7 @@ nav {
     flex-direction: row-reverse;
     font-family: $font;
     font-size: 18px;
+    margin-right: 40px;
 }
 
 .primary-links > * {
@@ -39,6 +40,7 @@ nav {
     flex-direction: row-reverse;
     font-family: $font;
     font-size: 14px;
+    margin-right: 40px;
     
 }
 
@@ -76,12 +78,12 @@ a {
     align-items: center
   }
 
-  .nav {
+  #nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: inherit;
-    padding-right: 40px;
+    // padding-right: 40px;
     background-image: linear-gradient(black, transparent);
   }
 
@@ -98,11 +100,24 @@ a {
       display: none;
   }
 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-
+// Media Queries 
   @media only screen and (max-width: 960px) {
-      .nav > * {
+      .primary-links {
           display: none;
+      }
+
+      .secondary-links {
+        display: none;
+      }
+
+      #logo {
+        display: none;
       }
 
       #dropdown {
