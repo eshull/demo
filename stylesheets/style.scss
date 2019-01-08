@@ -31,6 +31,7 @@ nav {
 
 .primary-links > * {
     margin-left: 10px;
+    color: white;
 }
 
 .secondary-links {
@@ -38,10 +39,24 @@ nav {
     flex-direction: row-reverse;
     font-family: $font;
     font-size: 14px;
+    
 }
 
 .secondary-links > * {
     margin-left: 10px;
+    color: white;
+}
+
+a.link:hover {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+#form {
+    width: 0px;
 }
 
 #logo {
@@ -78,3 +93,4 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
   }
+
