@@ -1,5 +1,5 @@
 body {
-  background-color: blue;
+  background-color: black;
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -18,7 +18,7 @@ nav {
 .primary-links {
   display: flex;
   flex-direction: row-reverse;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin-right: 40px; }
 
@@ -29,7 +29,7 @@ nav {
 .secondary-links {
   display: flex;
   flex-direction: row-reverse;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-right: 40px; }
 
@@ -114,6 +114,35 @@ button:hover {
   height: auto;
   padding: 70px;
   background-image: linear-gradient(to bottom right, #122021, #003147); }
+
+.owl-content {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  z-index: -1; }
+
+.content {
+  background-color: #1e1e27;
+  color: white;
+  padding: 10px 20px 10px 20px; }
+
+h3 {
+  color: #0083c0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  margin-top: 0px; }
+
+h4 {
+  color: #0083c0;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px; }
 
 @media only screen and (max-width: 960px) {
   .primary-links {

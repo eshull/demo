@@ -1,5 +1,5 @@
-$background-color: blue;
-$font: sans-serif;
+$background-color: black;
+$font: 'Open Sans', sans-serif;
 $saffire-blue: #0083c0;
 
 body {
@@ -140,6 +140,46 @@ button:hover {
     padding: 70px;
     background-image: linear-gradient(to bottom right, #122021, #003147);
 }
+
+.owl-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.content-container {
+}
+
+.content {
+    background-color: #1e1e27;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+h3 {
+    color: $saffire-blue;
+    font-family: $font;
+    font-size: 35px;
+    margin-top: 0px;
+}
+
+h4 {
+    color: $saffire-blue;
+    font-family: $font;
+    margin: 0px;
+}
+
+p {
+    font-family: $font;
+}
+
+.content p {
+    font-family: $font;
+    font-size: 10px;
+}
+
+
 // Media Queries 
   @media only screen and (max-width: 960px) {
       .primary-links {
