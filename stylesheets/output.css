@@ -1,4 +1,36 @@
 body {
-  background-color: purple; }
+  background-color: blue;
+  margin: 0px; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90px;
+  background-image: linear-gradient(to bottom, black, transparent);
+  color: white;
+  padding-right: 60px; }
+
+.primary-links {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: sans-serif;
+  font-size: 18px; }
+
+.primary-links > * {
+  margin-left: 10px; }
+
+.secondary-links {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: sans-serif;
+  font-size: 14px; }
+
+.secondary-links > * {
+  margin-left: 10px; }
+
+#logo {
+  position: absolute;
+  left: 40px; }
 
 /*# sourceMappingURL=output.css.map */
