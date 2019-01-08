@@ -1,6 +1,9 @@
 $(document).ready(function() {
     console.log("Script ran");
 
+    // owl carousel function
+    $(".owl-carousel").owlCarousel();
+
     // Search hover
     $("#search").hover(function(){
         $('#form').animate({width: "70px"});

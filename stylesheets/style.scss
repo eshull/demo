@@ -134,6 +134,12 @@ a {
 button:hover {
     opacity: .75;
 }
+
+.container {
+    height: auto;
+    padding: 70px;
+    background-image: linear-gradient(to bottom right, #122021, #003147);
+}
 // Media Queries 
   @media only screen and (max-width: 960px) {
       .primary-links {
