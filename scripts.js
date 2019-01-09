@@ -2,7 +2,10 @@ $(document).ready(function() {
     console.log("Script ran");
 
     // owl carousel function
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        singleItem: true
+    });
 
     // Search hover
     $("#search").hover(function(){

@@ -86,7 +86,7 @@ a {
     justify-content: space-evenly;
     height: inherit;
     background-image: linear-gradient(black, transparent);
-    z-index: 1;
+    z-index: 5;
   }
 
   #main-feature {
@@ -137,8 +137,9 @@ button:hover {
 
 .container {
     height: auto;
-    padding: 70px;
     background-image: linear-gradient(to bottom right, #122021, #003147);
+    display: flex;
+    padding: 60px 0px 60px 0px;
 }
 
 .owl-content {
@@ -148,7 +149,12 @@ button:hover {
     z-index: -1;
 }
 
-.content-container {
+.owl-stage {
+    margin-left: 0px;
+} 
+
+.owl-container {
+    width: 50%;
 }
 
 .content {
@@ -179,9 +185,49 @@ p {
     font-size: 10px;
 }
 
-#scroll-container {
-    height: 260px;
+#angled-background {
+    width: 500px;
+    height: 290px;
+    background: #0083c0;
+    left: -.25em;
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    z-index: 1;
+    margin-top: -10px;
 }
+
+#scroll {
+    width: 400px;
+    height: 215px;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: skewY(3deg);
+    -moz-transform: skewY(3deg);
+    transform: skewY(3deg);
+    border: black solid 3px;
+}
+
+.scroll-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+// .example {
+//     margin-left: 200px;
+//     width: 500px;
+//     height: 290px;
+//     background: #0083c0;
+//     left: -.25em;
+//     -webkit-transform: skewY(-5deg);
+//     -moz-transform: skewY(-5deg);
+//     transform: skewY(-5deg);
+// }
 
 // Media Queries 
   @media only screen and (max-width: 960px) {
