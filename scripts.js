@@ -54,10 +54,28 @@ $(document).ready(function() {
 
                 var i = 0;
                 do {
+                    var titleText = data[i].title
+                    var bodyText = data[i].body
+                    console.log("body text" + bodyText);
+                    
+                    if (titleText.length > 50) {
+                        console.log("in if statement");
+                        
+                        titleText = titleText.substring(0, 50) + '...';
+                        console.log(titleText.length);
+                        };
+                    if (bodyText.length > 125) {
+                        bodyText = bodyText.substring(0, 125) + '...';
+                       console.log(bodyText.length)
+                    };
+
+                    console.log(titleText.length + "title length");
+                    
+
                     $('#json-container').prepend('<div class="events-content">'
                     + '<img id="content-image" src="images/json' + [i] + '.png" alt="events image" width="80px" height="80px">'
-                    +'<h4 class="json-title">' + data[i].title + '</h4>' 
-                    + '<p class="json-body">' + data[i].body + '</p>'
+                    + '<h4 class="json-title">' + titleText + '</h4>' 
+                    + '<p class="json-body">' + bodyText + '</p>'
                     + '</div>').hide().fadeIn(400);
                 // $('#scroll').html('<h1>Title ' + data[i].title + '</h1>').hide().fadeIn(400);
                 
