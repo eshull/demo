@@ -47,10 +47,26 @@ $(document).ready(function() {
             complete: function() {
                 $('#loading').remove();
             },
-            success : function(data) {              
+            success : function(data) {  
+                console.log(data);           
                 // alert('Success Data: '+data);
                 // scrollDiv.html( $(data).find('#json-container')).hide().fadeIn(400); 
-                $('#scroll').html('<h1>Success</h1>').hide().fadeIn(400);
+
+                var i = 0;
+                do {
+                    $('#json-container').prepend('<div class="json-data">' 
+                    +'<h2>Title ' + data[i].title + '</h2>' 
+                    + '<h2>Body </h2> ' + data[i].body + '</h2>'
+                    + '</div>').hide().fadeIn(400);
+                // $('#scroll').html('<h1>Title ' + data[i].title + '</h1>').hide().fadeIn(400);
+                
+
+                i++;
+                }
+                while (i < 10);
+
+
+                // $('#scroll').html('<h1>Success ' + data[0].title + '</h1>').hide().fadeIn(400);
             },
             error : function(request,error)
             {

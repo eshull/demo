@@ -215,7 +215,41 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.json-container {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.json-data {
+    height: 100px;
+    background-color: black;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.events-content {
+    width: 100%;
+    background-color: #1e1e27;
+    font-family: $font;
+    margin-bottom: 10px;
+    height: 80px;
+}
+
+.json-title {
+    position: relative;
+    top: -78px;
+    left: 120px;
+}
+.json-body {
+    position: relative;
+    left: 120px;
+    top: -81px;
+    color: white;
+    line-height: 15px;
+    font-size: 11px;
 }
 
 // .example {
