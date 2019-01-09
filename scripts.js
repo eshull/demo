@@ -27,4 +27,35 @@ $(document).ready(function() {
         header.classList.remove("sticky");
     }
     }
+
+    // ajax call
+
+    $('#scroll').on('click', function(e) {
+        e.preventDefault();
+        var url = 'https://jsonplaceholder.typicode.com/posts'
+        var scrollDiv = $('#scroll');
+
+
+        $.ajax({
+
+            url : url,
+            type : 'GET',
+            timeout: 2000,
+            beforeSend: function() {
+                scrollDiv.append('<div id="loading">Loading...</div>');
+            },
+            complete: function() {
+                $('#loading').remove();
+            },
+            success : function(data) {              
+                // alert('Success Data: '+data);
+                // scrollDiv.html( $(data).find('#json-container')).hide().fadeIn(400); 
+                $('#scroll').html('<h1>Success</h1>').hide().fadeIn(400);
+            },
+            error : function(request,error)
+            {
+                alert("Error Request: "+JSON.stringify(request));
+            }
+        }); 
+    });
 });
