@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: lightgrey;
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -143,6 +143,9 @@ p {
 .content p {
   font-family: "Open Sans", sans-serif;
   font-size: 10px; }
+
+#scroll-container {
+  height: 260px; }
 
 @media only screen and (max-width: 960px) {
   .primary-links {

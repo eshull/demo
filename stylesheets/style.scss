@@ -1,4 +1,4 @@
-$background-color: black;
+$background-color: lightgrey;
 $font: 'Open Sans', sans-serif;
 $saffire-blue: #0083c0;
 
@@ -179,6 +179,9 @@ p {
     font-size: 10px;
 }
 
+#scroll-container {
+    height: 260px;
+}
 
 // Media Queries 
   @media only screen and (max-width: 960px) {
