@@ -238,10 +238,15 @@ p {
     height: 80px;
 }
 
+.simplebar-content {
+    overflow: scroll !important;
+}
+
 .json-title {
     position: relative;
     top: -78px;
     left: 120px;
+    max-width: 280px;
 }
 .json-body {
     position: relative;
@@ -250,6 +255,7 @@ p {
     color: white;
     line-height: 15px;
     font-size: 11px;
+    max-width: 280px;
 }
 
 // .example {

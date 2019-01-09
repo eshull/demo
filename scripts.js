@@ -54,9 +54,10 @@ $(document).ready(function() {
 
                 var i = 0;
                 do {
-                    $('#json-container').prepend('<div class="json-data">' 
-                    +'<h2>Title ' + data[i].title + '</h2>' 
-                    + '<h2>Body </h2> ' + data[i].body + '</h2>'
+                    $('#json-container').prepend('<div class="events-content">'
+                    + '<img id="content-image" src="images/json' + [i] + '.png" alt="events image" width="80px" height="80px">'
+                    +'<h4 class="json-title">' + data[i].title + '</h4>' 
+                    + '<p class="json-body">' + data[i].body + '</p>'
                     + '</div>').hide().fadeIn(400);
                 // $('#scroll').html('<h1>Title ' + data[i].title + '</h1>').hide().fadeIn(400);
                 
