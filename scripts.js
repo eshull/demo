@@ -29,9 +29,61 @@ $(document).ready(function() {
         header.classList.remove("sticky");
     }
     }
+    // grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+    // grid-row: <start-line> / <end-line> | <start-line> / span <value>;
 
-    $( ".card-widget-item" ).first( "div" ).css(  "flex", "2 2 40em" );
-    $( ".card-widget-item" ).last( "div" ).css( "flex", "2 2 40em"  );
+    //  $( ".card-widget-item" ).first( "div" )
+    // .css( {"grid-column-start": "col1-start",
+    // "grid-column-end": "span col3-start",
+    // "grid-row-start": "row1-start",
+    // "grid-row-end": "span 2"} );
+
+    // $( "#fourth-feature div:nth-child(2)" )
+    // .css( {"grid-column-start": "0",
+    // "grid-column-end": "span col2-start",
+    // "grid-row-start": "1",
+    // "grid-row-end": "span 2"} );
+
+    // $( "#fourth-feature div:nth-child(3)" )
+    // .css( {"grid-column-start": "0",
+    // "grid-column-end": "span col2-start",
+    // "grid-row-start": "1",
+    // "grid-row-end": "span 2"} );
+
+    // $( "#fourth-feature div:nth-child(4)" )
+    // .css( {"grid-column-start": "0",
+    // "grid-column-end": "span col2-start",
+    // "grid-row-start": "1",
+    // "grid-row-end": "span 2"} );
+
+    // $( "#fourth-feature div:nth-child(5)" )
+    // .css( {"grid-column-start": "0",
+    // "grid-column-end": "span col2-start",
+    // "grid-row-start": "1",
+    // "grid-row-end": "span 2"} );
+
+    // $( ".card-widget-item" ).last( "div" )
+    // .css( {"grid-column-start": "0",
+    // "grid-column-end": "span col2-start",
+    // "grid-row-start": "1",
+    // "grid-row-end": "span 2"} );
+
+    
+
+    $( ".card-widget-item" ).first( "div" ).css(  "grid-area", "big1" );
+    $( "#fourth-feature div:nth-child(2)" ).css( "grid-area", "small1"  );
+    $( "#fourth-feature div:nth-child(3)" ).css( "grid-area", "small2"  );
+    $( "#fourth-feature div:nth-child(4)" ).css( "grid-area", "small3" );
+    $( "#fourth-feature div:nth-child(5)" ).css( "grid-area", "small4"  );
+    $( ".card-widget-item" ).last( "div" ).css( "grid-area", "big2"  );
+
+    // $( ".card-widget-item" ).first( "div" ).css(  {"width": "50%", "position": "absolute", "top": "0px"} );
+    // $( "#fourth-feature div:nth-child(2)" ).css( {"width": "25%", "position": "absolute", "top": "0px"}   );
+    // $( "#fourth-feature div:nth-child(3)" ).css( {"width": "25%", "position": "absolute", "top": "-183px", "left": "183px"}   );
+    // $( "#fourth-feature div:nth-child(4)" ).css( {"width": "25%", "position": "absolute", "top": "0px"}   );
+    // $( "#fourth-feature div:nth-child(5)" ).css( {"width": "25%", "position": "absolute", "top": "0px"}   );
+    // $( ".card-widget-item" ).last( "div" ).css( {"width": "50%", "position": "absolute", "top": "0px"}   );
+    
 
     // $( "#fourth-feature" ).find("div:nth-child(1)").css("border", "solid black 3px")
 
