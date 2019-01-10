@@ -56,39 +56,25 @@ $(document).ready(function() {
                 do {
                     var titleText = data[i].title
                     var bodyText = data[i].body
-                    titleText = titleText.charAt(0).toUpperCase() + titleText.substr(1);
+                    titleText = titleText.replace(/\b\w/g, l => l.toUpperCase());
                     bodyText = bodyText.charAt(0).toUpperCase() + bodyText.substr(1);
-                    console.log("body text" + bodyText);
                     
                     if (titleText.length > 50) {
-                        console.log("in if statement");
-                        
                         titleText = titleText.substring(0, 50) + '...';
-                        console.log(titleText.length);
                         };
-                    if (bodyText.length > 125) {
-                        
-                        bodyText = bodyText.substring(0, 125) + '...';
-                       console.log(bodyText.length)
-                    };
 
-                    console.log(titleText.length + "title length");
-                    
+                    if (bodyText.length > 125) {
+                        bodyText = bodyText.substring(0, 125) + '...';
+                    };
 
                     $('#json-container').prepend('<div class="events-content">'
                     + '<img id="content-image" src="images/json' + [i] + '.png" alt="events image" width="80px" height="80px">'
                     + '<h4 class="json-title">' + titleText + '</h4>' 
                     + '<p class="json-body">' + bodyText + '</p>'
                     + '</div>').hide().fadeIn(400);
-                // $('#scroll').html('<h1>Title ' + data[i].title + '</h1>').hide().fadeIn(400);
-                
-
                 i++;
                 }
                 while (i < 10);
-
-
-                // $('#scroll').html('<h1>Success ' + data[0].title + '</h1>').hide().fadeIn(400);
             },
             error : function(request,error)
             {
