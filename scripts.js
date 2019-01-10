@@ -56,6 +56,8 @@ $(document).ready(function() {
                 do {
                     var titleText = data[i].title
                     var bodyText = data[i].body
+                    titleText = titleText.charAt(0).toUpperCase() + titleText.substr(1);
+                    bodyText = bodyText.charAt(0).toUpperCase() + bodyText.substr(1);
                     console.log("body text" + bodyText);
                     
                     if (titleText.length > 50) {
@@ -65,6 +67,7 @@ $(document).ready(function() {
                         console.log(titleText.length);
                         };
                     if (bodyText.length > 125) {
+                        
                         bodyText = bodyText.substring(0, 125) + '...';
                        console.log(bodyText.length)
                     };
