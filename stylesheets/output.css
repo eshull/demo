@@ -38,7 +38,7 @@ nav {
   color: white; }
 
 a.link:hover {
-  color: blue; }
+  color: #0083c0; }
 
 a {
   text-decoration: none; }
@@ -105,6 +105,17 @@ a {
   background: #f26921;
   color: white;
   font-size: 15px;
+  margin: 20px; }
+
+.orange-outline-button {
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  border: #f26921 solid 2px;
+  background: #111111;
+  color: #f26921;
+  font-size: 12px;
   margin: 20px; }
 
 button:hover {
@@ -229,10 +240,57 @@ p {
   width: 100%;
   box-shadow: 0 0 0 5px #0083c0; }
 
+.responsive {
+  width: 100%;
+  height: auto; }
+
 #fourth-feature {
   display: grid;
   grid-template-areas: 'big1 big1 small3 small4' 'big1 big1 big2 big2' 'small1 small2 big2 big2';
   width: auto; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #111111; }
+
+#footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  align-items: center; }
+
+.footer-logo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  color: white; }
+
+.footer-logo-info p {
+  font-size: 13px;
+  text-align: center; }
+
+.footer-logo-info .primary-links > * {
+  font-size: 13px;
+  margin-right: 0px; }
+
+#footer-image {
+  width: 50%; }
+
+#triangle {
+  position: absolute;
+  top: 35%;
+  right: 50%;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-top: 60px solid transparent;
+  border-right: 60px solid #111111; }
 
 @media only screen and (max-width: 960px) {
   .primary-links {
