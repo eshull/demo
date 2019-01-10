@@ -30,23 +30,25 @@ $(document).ready(function() {
     }
     }
 
-    var parent = $(".fourth-feature")
+    $( ".card-widget-item" ).first( "div" ).css(  "flex", "2 2 40em" );
+    $( ".card-widget-item" ).last( "div" ).css( "flex", "2 2 40em"  );
 
-    console.log(parent.length);
-    // "<img src='images/image1.jpeg'>"
+    // $( "#fourth-feature" ).find("div:nth-child(1)").css("border", "solid black 3px")
 
-    $( "#fourth-feature div:nth-child(1)" ).find( ".image-container" ).html("<img src='images/image1.jpeg'>");
+    // var top = $( "#fourth-feature:first-child" ).addClass( "yourClass" );
 
-    parent.find("")
-    $( ".card-widget-item" ).children().addClass( "test" );
-    i = 0
+    // function changeImageSize(width) {
+    //     var parent = document.getElementById('fourth-feature');
+    //     var child = parent.firstChild
+    //     console.log(child.className);
+        
+    //   }
 
-    $('#fourth-feature').find('image-container').each(function () {
-        this.append("<p>testing</p>")
-        i++
-    });
-    var divs = $('.image-container')
-    console.log(typeof divs);
+    //   changeImageSize("50%")
+    // parent = findele
+    // var top = $( "div:first-child" )
+    // console.log(top.attr("id"));
+    
     
     // insert images 
     var i = 0
@@ -54,7 +56,6 @@ $(document).ready(function() {
         $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".image-container" ).html("<img src='images/image" + i + ".jpeg'>");
         i++
     } while (i < 7);
-    
 
     // ajax call
 
