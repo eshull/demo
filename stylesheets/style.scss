@@ -1,6 +1,7 @@
 $background-color: lightgrey;
 $font: 'Open Sans', sans-serif;
 $saffire-blue: #0083c0;
+$pic-border: solid 4px #0083c0;
 
 body {
     background-color: $background-color;
@@ -139,7 +140,9 @@ button:hover {
     height: auto;
     background-image: linear-gradient(to bottom right, #122021, #003147);
     display: flex;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 110px 0px;
+    border-top: solid 4px #0083c0;
+    border-bottom: solid 4px #0083c0;
 }
 
 .owl-content {
@@ -198,7 +201,7 @@ p {
 }
 
 #scroll {
-    width: 400px;
+    width: 415px;
     height: 215px;
     position: absolute;
     top: 13%;
@@ -207,7 +210,6 @@ p {
     -webkit-transform: skewY(3deg);
     -moz-transform: skewY(3deg);
     transform: skewY(3deg);
-    border: black solid 3px;
 }
 
 .scroll-container {
@@ -231,7 +233,7 @@ p {
 }
 
 .events-content {
-    width: 100%;
+    width: 96%;
     background-color: #1e1e27;
     font-family: $font;
     margin-bottom: 10px;
@@ -240,6 +242,14 @@ p {
 
 .simplebar-content {
     overflow: scroll !important;
+}
+
+.simplebar-scrollbar {
+    background-color: black;
+}
+
+.simplebar-track {
+    background-color: #013c58;
 }
 
 .json-title {

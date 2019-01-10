@@ -4,7 +4,9 @@ $(document).ready(function() {
     // owl carousel function
     $(".owl-carousel").owlCarousel({
         items: 1,
-        singleItem: true
+        singleItem: true,
+        nav: true
+        
     });
 
     // Search hover
@@ -28,6 +30,32 @@ $(document).ready(function() {
     }
     }
 
+    var parent = $(".fourth-feature")
+
+    console.log(parent.length);
+    // "<img src='images/image1.jpeg'>"
+
+    $( "#fourth-feature div:nth-child(1)" ).find( ".image-container" ).html("<img src='images/image1.jpeg'>");
+
+    parent.find("")
+    $( ".card-widget-item" ).children().addClass( "test" );
+    i = 0
+
+    $('#fourth-feature').find('image-container').each(function () {
+        this.append("<p>testing</p>")
+        i++
+    });
+    var divs = $('.image-container')
+    console.log(typeof divs);
+    
+    // insert images 
+    var i = 0
+    do {
+        $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".image-container" ).html("<img src='images/image" + i + ".jpeg'>");
+        i++
+    } while (i < 7);
+    
+
     // ajax call
 
     $('#scroll').on('click', function(e) {
@@ -35,9 +63,7 @@ $(document).ready(function() {
         var url = 'https://jsonplaceholder.typicode.com/posts'
         var scrollDiv = $('#scroll');
 
-
         $.ajax({
-
             url : url,
             type : 'GET',
             timeout: 2000,
@@ -48,9 +74,6 @@ $(document).ready(function() {
                 $('#loading').remove();
             },
             success : function(data) {  
-                console.log(data);           
-                // alert('Success Data: '+data);
-                // scrollDiv.html( $(data).find('#json-container')).hide().fadeIn(400); 
 
                 var i = 0;
                 do {
