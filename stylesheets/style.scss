@@ -308,6 +308,10 @@ p {
     width: auto;
 }
 
+.card-content {
+    z-index: 2;
+}
+
 footer {
     display: flex;
     flex-direction: row;

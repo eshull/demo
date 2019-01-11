@@ -40,10 +40,14 @@ $(document).ready(function() {
     $( ".card-widget-item" ).last( "div" ).css( "grid-area", "big2" );
 
     
-    // insert images 
+    // insert images background-image:url(../images/main-bg.jpg);
     var i = 0
     do {
+        
         $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".image-container" ).html("<img src='images/image" + i + ".jpeg'>");
+        // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-widget-item" ).html("<img src='images/image" + i + ".jpeg'>");
+        // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-content" ).insert("<img src='images/image" + i + ".jpeg'>");
+        // $("<img src='images/image" + i + ".jpeg'>").insertAfter( "#fourth-feature div:nth-child(" + i + ")" ).find( "a" );
         i++
     } while (i < 7);
 
