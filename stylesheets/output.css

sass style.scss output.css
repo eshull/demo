@@ -1,5 +1,5 @@
 body {
-  background-color: #1a1d1f;
+  background-color: lightgrey;
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   height: inherit;
-  background-image: linear-gradient(#111111, transparent);
+  background-image: linear-gradient(black, transparent);
   z-index: 5; }
 
 #main-feature {
@@ -93,13 +93,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #111111; }
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  background-color: black; }
 
 .blue-button {
   width: 150px;
@@ -154,23 +148,6 @@ button:hover {
 
 .owl-container {
   width: 50%; }
-
-div.owl-nav {
-  display: none; }
-
-.owl-carousel button.owl-dot {
-  height: 20px;
-  background: black;
-  margin: 10px;
-  width: 40px; }
-
-div.owl-dots {
-  display: flex;
-  justify-content: center;
-  margin: 25px; }
-
-.owl-dot.active {
-  background: #0083c0 !important; }
 
 .content {
   background-color: #1e1e27;
@@ -268,7 +245,8 @@ p {
   max-width: 280px; }
 
 .image-container img {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 0 0 5px #0083c0; }
 
 .responsive {
   width: 100%;
@@ -277,66 +255,29 @@ p {
 #fourth-feature {
   display: grid;
   grid-template-areas: 'big1 big1 small3 small4' 'big1 big1 big2 big2' 'small1 small2 big2 big2';
-  width: auto;
-  z-index: 2;
-  margin-bottom: 5px; }
-
-.card-widget-item {
-  z-index: 0;
-  position: relative;
-  overflow: hidden; }
+  width: auto; }
 
 .image-container {
-  position: relative;
-  z-index: 0; }
+  position: relative; }
 
 .card-content {
   position: absolute;
+  top: 20px;
   color: white;
   font-family: "Open Sans", sans-serif;
-  width: 100%;
-  height: 150%;
+  width: 50%;
+  height: 100%;
   text-align: center;
+  margin-left: 25%;
   justify-content: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  font-size: 12px;
-  z-index: 4; }
+  font-size: 10px; }
 
-.card-widget-title {
-  width: 230px;
-  background-color: #0083c0;
-  height: 45px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-self: end;
-  align-items: center;
-  padding-right: 28px;
-  right: 10%;
-  bottom: 10%;
-  opacity: .85;
-  font-size: 21px;
-  z-index: 1; }
-
-.overlay {
-  background-color: rgba(47, 150, 219, 0.719);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 3; }
-
-.color {
-  position: absolute;
-  top: 0px;
-  z-index: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-.visible {
-  display: initial; }
+.card-content .card-widget-description, .more-button {
+  top: 50%;
+  left: 50%; }
 
 .more-button {
   width: 105px;
@@ -346,25 +287,13 @@ p {
   background: #f26921;
   color: white;
   font-size: 11px;
-  margin-top: 5px;
-  padding-top: 5px; }
-
-.card-content .card-widget-description, .more-button {
-  top: 50%;
-  left: 50%;
-  z-index: 1; }
-
-.card-content p {
-  width: 60%; }
+  margin: 20px;
+  padding-top: 4px; }
 
 footer {
   display: flex;
   flex-direction: row;
-  background-color: #111111;
-  text-align: center; }
-
-footer.primary-links {
-  margin-right: 0px; }
+  background-color: #111111; }
 
 #footer-logo {
   display: flex;
@@ -408,9 +337,6 @@ footer.primary-links {
   .primary-links {
     display: none; }
 
-  footer .primary-links {
-    display: initial; }
-
   .secondary-links {
     display: none; }
 
@@ -423,15 +349,6 @@ footer.primary-links {
     top: 20px;
     display: initial; }
 
-  #main-feature {
-    width: 70%; }
-
-  #main-feature h1 {
-    font-size: 35px; }
-
-  #main-feature p {
-    font-size: 12px; }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -439,16 +356,10 @@ footer.primary-links {
     width: 100%;
     overflow: hidden; }
 
-  .owl-container {
-    width: 80%; }
-
   #fourth-feature {
     display: flex;
     flex-direction: column;
     align-items: center; }
-
-  #fourth-feature p {
-    width: 40%; }
 
   footer {
     flex-direction: column; }
@@ -470,10 +381,6 @@ footer.primary-links {
     right: 43%; } }
 @media only screen and (max-width: 660px) {
   #triangle {
-    right: 37%;
-    top: -24%; }
+    right: 37%; } }
 
-  .buttons {
-    flex-direction: column; } }
-
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=output.css%0A%0Asass%20style.scss%20output.css.map */
