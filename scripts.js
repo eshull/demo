@@ -32,12 +32,12 @@ $(document).ready(function() {
     
     // layout for fourth feature
 
-    $( ".card-widget-item" ).first( "div" ).css(  "grid-area", "big1" );
-    $( "#fourth-feature div:nth-child(2)" ).css( "grid-area", "small1" );
-    $( "#fourth-feature div:nth-child(3)" ).css( "grid-area", "small2" );
-    $( "#fourth-feature div:nth-child(4)" ).css( "grid-area", "small3" );
-    $( "#fourth-feature div:nth-child(5)" ).css( "grid-area", "small4" );
-    $( ".card-widget-item" ).last( "div" ).css( "grid-area", "big2" );
+    $( ".card-widget-item" ).first( "div" ).css( { "grid-area": "big1", "background-image": "url(images/image1.jpeg)", "background-size": "cover", "box-shadow": "0 0 0 5px #0083c0" });
+$( "#fourth-feature div:nth-child(2)" ).css( {"grid-area": "small1", "background-image": "url(images/image2.jpeg)", "background-size": "cover", "box-shadow": "0 0 0 5px #0083c0"} );
+    $( "#fourth-feature div:nth-child(3)" ).css( {"grid-area": "small2", "background-image": "url(images/image3.jpeg)", "background-size": "cover", "box-shadow": "0 0 0 5px #0083c0"});
+    $( "#fourth-feature div:nth-child(4)" ).css( {"grid-area": "small3", "background-image": "url(images/image4.jpeg)", "background-size": "cover", "box-shadow": "0 0 0 5px #0083c0"} );
+    $( "#fourth-feature div:nth-child(5)" ).css( {"grid-area": "small4", "background-image": "url(images/image5.jpeg)", "background-size": "cover", "box-shadow": "0 0 0 5px #0083c0"} );
+    $( ".card-widget-item" ).last( "div" ).css( {"grid-area": "big2", "background-image": "url(images/image6.jpeg)", "background-size": "cover", "box-shadow": "0 0 0 5px #0083c0"} );
 
     // $('#fourth-feature div:nth-child(1) div div').html("<img src='images/image1.jpeg'>")
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
     var i = 0
     do {
          i++
-         $('#fourth-feature div:nth-child(' + i + ') div div').after("<img src='images/image" + i + ".jpeg'>");
+         $('#fourth-feature div:nth-child(' + i + ') div div').after("<img src='images/image" + i + ".jpeg' style='visibility: hidden;'>");
         // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".more-button" ).after("<img src='images/image" + i + ".jpeg'>");
         // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-widget-item" ).html("<img src='images/image" + i + ".jpeg'>");
         // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-content" ).insert("<img src='images/image" + i + ".jpeg'>");
@@ -64,13 +64,13 @@ $(document).ready(function() {
     //     $(this).css("background-color", "pink");
     //   });
 
-      $(".card-widget-item").hover(function(){
-        $(this).addClass("overlay");
-        $(this).find("span").addClass("invisible")
-        }, function(){
-        $(this).removeClass("overlay");
-        $(this).find("span").removeClass("invisible")
-      });
+    //   $(".card-widget-item").hover(function(){
+    //     $(this).addClass("overlay");
+    //     $(this).find("span").addClass("invisible")
+    //     }, function(){
+    //     $(this).removeClass("overlay");
+    //     $(this).find("span").removeClass("invisible")
+    //   });
 
     // $(".card-widget-item").hover(function(){
     //     $('.image-container').animate({opacity: ".85"});
