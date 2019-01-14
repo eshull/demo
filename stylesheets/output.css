@@ -155,10 +155,7 @@ div.owl-nav {
 .owl-carousel button.owl-dot {
   height: 20px;
   background: black;
-  color: inherit;
   margin: 10px;
-  padding: 0 !important;
-  font: inherit;
   width: 40px; }
 
 div.owl-dots {
@@ -357,7 +354,11 @@ p {
 footer {
   display: flex;
   flex-direction: row;
-  background-color: #111111; }
+  background-color: #111111;
+  text-align: center; }
+
+footer.primary-links {
+  margin-right: 0px; }
 
 #footer-logo {
   display: flex;
@@ -400,6 +401,9 @@ footer {
 @media only screen and (max-width: 960px) {
   .primary-links {
     display: none; }
+
+  footer .primary-links {
+    display: initial; }
 
   .secondary-links {
     display: none; }
@@ -460,6 +464,7 @@ footer {
     right: 43%; } }
 @media only screen and (max-width: 660px) {
   #triangle {
-    right: 37%; } }
+    right: 37%;
+    top: -24%; } }
 
 /*# sourceMappingURL=output.css.map */
