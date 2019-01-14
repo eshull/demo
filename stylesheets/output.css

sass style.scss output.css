@@ -262,39 +262,22 @@ p {
 
 .card-content {
   position: absolute;
+  top: 20px;
   color: white;
   font-family: "Open Sans", sans-serif;
-  width: 100%;
-  height: 150%;
+  width: 50%;
+  height: 100%;
   text-align: center;
+  margin-left: 25%;
   justify-content: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   font-size: 10px; }
 
-.card-widget-title {
-  width: 230px;
-  background-color: #0083c0;
-  height: 45px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-self: end;
-  align-items: center;
-  padding-right: 28px;
-  right: 10%;
-  bottom: 10%;
-  opacity: .85;
-  font-size: 21px; }
-
-.overlay {
-  background-color: #0083c0;
-  opacity: .3;
-  height: 110%;
-  z-index: 3; }
-
-.invisible {
-  display: none; }
+.card-content .card-widget-description, .more-button {
+  top: 50%;
+  left: 50%; }
 
 .more-button {
   width: 105px;
@@ -306,11 +289,6 @@ p {
   font-size: 11px;
   margin: 20px;
   padding-top: 4px; }
-
-.card-content .card-widget-description, .more-button {
-  top: 50%;
-  left: 50%;
-  display: none; }
 
 footer {
   display: flex;
@@ -405,4 +383,4 @@ footer {
   #triangle {
     right: 37%; } }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=output.css%0A%0Asass%20style.scss%20output.css.map */

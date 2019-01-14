@@ -8,6 +8,7 @@ body {
     margin: 0px;
     background-size: cover;
     background-repeat: no-repeat;
+    counter-reset: div-counter;
 }
 
 body, html {
@@ -305,11 +306,82 @@ p {
     'big1 big1 small3 small4'
     'big1 big1 big2 big2'
     'small1 small2 big2 big2';
-    width: auto;
+     width: auto;
+    //  position: relative;
+}
+// .more-button::after {
+//     /* Increment "my-sec-counter" by 1 */
+//     counter-increment: div-counter;
+//     content: "<img src='images/image" counter(div-counter) ".jpeg'>";
+//   }
+
+.image-container {
+    position: relative;
+}
+.card-content {
+    position: absolute;
+    // top: 20px;
+    color: white;
+    font-family: $font;
+    width: 100%;
+    height: 150%;
+    text-align: center;
+    // margin-left: 25%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 10px;
 }
 
-.card-content {
-    z-index: 2;
+.card-widget-title {
+    width: 230px;
+    background-color: #0083c0;
+    height: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: end;
+    align-items: center;
+    padding-right: 28px;
+    // position: absolute;
+    right: 10%;
+    bottom: 10%;
+    opacity: .85;
+    font-size: 21px;
+}
+
+// first and last
+// .card-content{
+//     height: 150%;
+// }
+
+.overlay {
+    background-color: #0083c0;
+    opacity: .3;
+    height: 110%;
+    z-index: 3;
+}
+
+.invisible {
+    display: none;
+}
+
+.more-button {
+    width: 105px;
+    height: 24px;
+    border: none;
+    border-radius: 20px;
+    background: #f26921;
+    color: white;
+    font-size: 11px;
+    margin: 20px;
+    padding-top: 4px;
+}
+
+.card-content .card-widget-description, .more-button {
+    top: 50%;
+    left: 50%;
+    display: none;
 }
 
 footer {

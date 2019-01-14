@@ -39,17 +39,44 @@ $(document).ready(function() {
     $( "#fourth-feature div:nth-child(5)" ).css( "grid-area", "small4" );
     $( ".card-widget-item" ).last( "div" ).css( "grid-area", "big2" );
 
+    // $('#fourth-feature div:nth-child(1) div div').html("<img src='images/image1.jpeg'>")
+
+    // console.log($( "#fourth-feature.card-content" ));
     
+    // $( "div.card-content" ).html("<img src='images/image1.jpeg'>");
     // insert images background-image:url(../images/main-bg.jpg);
     var i = 0
     do {
-        
-        $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".image-container" ).html("<img src='images/image" + i + ".jpeg'>");
+         i++
+         $('#fourth-feature div:nth-child(' + i + ') div div').after("<img src='images/image" + i + ".jpeg'>");
+        // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".more-button" ).after("<img src='images/image" + i + ".jpeg'>");
         // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-widget-item" ).html("<img src='images/image" + i + ".jpeg'>");
         // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-content" ).insert("<img src='images/image" + i + ".jpeg'>");
         // $("<img src='images/image" + i + ".jpeg'>").insertAfter( "#fourth-feature div:nth-child(" + i + ")" ).find( "a" );
-        i++
+       
     } while (i < 7);
+
+    // on hover for images
+
+    // $("p").hover(function(){
+    //     $(this).css("background-color", "yellow");
+    //     }, function(){
+    //     $(this).css("background-color", "pink");
+    //   });
+
+      $(".card-widget-item").hover(function(){
+        $(this).addClass("overlay");
+        $(this).find("span").addClass("invisible")
+        }, function(){
+        $(this).removeClass("overlay");
+        $(this).find("span").removeClass("invisible")
+      });
+
+    // $(".card-widget-item").hover(function(){
+    //     $('.image-container').animate({opacity: ".85"});
+    //     }, function(){
+    //     $('.image-container').animate({opacity: "1"});
+    // });
 
     // ajax call
 
