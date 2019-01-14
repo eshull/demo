@@ -317,7 +317,7 @@ p {
 //   }
 
 .card-widget-item {
-    z-index: 3;
+    z-index: 0;
     position: relative;
 }
 
@@ -338,7 +338,13 @@ p {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
+    z-index: 4;
+    // -webkit-transition: all 0.5s ease;
+    // -moz-transition: all 0.5s ease;
+    // -o-transition: all 0.5s ease;
+    // transition: all 0.5s ease;
+
 }
 
 .card-widget-title {
@@ -355,6 +361,7 @@ p {
     bottom: 10%;
     opacity: .85;
     font-size: 21px;
+    z-index: 1;
 }
 
 // first and last
@@ -363,7 +370,7 @@ p {
 // }
 
 .overlay {
-    background-color: rgba(0,255,0,0.5);
+    background-color: rgba(47, 150, 219, 0.719);
     // background: rgba(38, 126, 207, 0.82);
     // background-color: #0083c0;
     // opacity: .3;
@@ -376,10 +383,15 @@ p {
 .color {
     position: absolute;
     top: 0px;
+    z-index: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.invisible {
-    display: none;
+.visible {
+    display: initial;
 }
 
 .more-button {
@@ -390,14 +402,18 @@ p {
     background: #f26921;
     color: white;
     font-size: 11px;
-    margin: 20px;
-    padding-top: 4px;
+    margin-top: 5px;
+    padding-top: 5px;
 }
 
 .card-content .card-widget-description, .more-button {
     top: 50%;
     left: 50%;
-    display: none;
+    z-index: 1;
+}
+
+.card-content p {
+    width: 60%;
 }
 
 footer {

@@ -32,7 +32,7 @@ $(document).ready(function() {
     
     // layout for fourth feature
 
-    $( "#fourth-feature div:nth-child(1)" ).css( { "grid-area": "big1", "background-image": "url(images/image1.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0" });
+    $( ".card-widget-item" ).first( "div" ).css( { "grid-area": "big1", "background-image": "url(images/image1.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0" });
     $( "#fourth-feature div:nth-child(2)" ).css( {"grid-area": "small1", "background-image": "url(images/image2.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0"} );
     $( "#fourth-feature div:nth-child(3)" ).css( {"grid-area": "small2", "background-image": "url(images/image3.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0"});
     $( "#fourth-feature div:nth-child(4)" ).css( {"grid-area": "small3", "background-image": "url(images/image4.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0"} );
@@ -63,15 +63,25 @@ $(document).ready(function() {
     //     }, function(){
     //     $(this).css("background-color", "pink");
     //   });
-    
-    $( "<div class='color'></div>" ).appendTo( ".card-widget-item" );
+    $("#fourth-feature p").hide();
+    $("#fourth-feature a").hide();
+    $( "<div class='color'></div>" ).appendTo( ".card-content" );
 
       $(".card-widget-item").hover(function(){
         $(this).find(".color").addClass("overlay");
-        $(this).find("span").addClass("invisible")
+        // $(this).find("span").addClass("invisible")
+        $(this).find(".card-content").css({"height": "100%", "flex-display": "column" });
+        $(this).find("p").show()
+        $(this).find("a").show()
+        $(this).find("span").hide()
         }, function(){
         $(this).find(".color").removeClass("overlay");
-        $(this).find("span").removeClass("invisible")
+        // $(this).find("span").removeClass("invisible")
+        // $(this).find("p").removeClass("visible")
+        $(this).find(".card-content").css({"height": "150%", "flex-display": "column-reverse" });
+        $(this).find("p").hide()
+        $(this).find("a").hide()
+        $(this).find("span").show()
       });
 
     // $(".card-widget-item").hover(function(){
