@@ -180,6 +180,30 @@ button:hover {
     width: 50%;
 }
 
+// owl
+div.owl-nav {
+   display: none;
+}
+.owl-carousel button.owl-dot {
+    height: 20px;
+    background: black;
+    color: inherit;
+    margin: 10px;
+    padding: 0!important;
+    font: inherit;
+    width: 40px;
+}
+div.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.owl-dot.active {
+    background: #0083c0 !important;
+}
+// --
+
 .content {
     background-color: #1e1e27;
     color: white;
