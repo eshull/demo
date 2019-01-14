@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("Script ran");
 
     // owl carousel function
     $(".owl-carousel").owlCarousel({
@@ -10,9 +9,15 @@ $(document).ready(function() {
 
     // Search hover
     $("#search").hover(function(){
-        $('#form').animate({width: "70px"});
+        if (this.width == "0px") {
+            $('#form').animate({width: "70px"});
+        }
+        
         }, function(){
-        $('#form').animate({width: "0px"});
+            if (this.width == "70px") {
+                $('#form').animate({width: "0px"});
+            }
+        
     });
 
     // header change on scroll 

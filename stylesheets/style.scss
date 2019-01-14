@@ -118,6 +118,13 @@ a {
     background-color: #111111;
   }
 
+  .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
   .blue-button {
       width: 150px;
       height: 35px;
@@ -161,8 +168,8 @@ button:hover {
     background-image: linear-gradient(to bottom right, #122021, #003147);
     display: flex;
     padding: 60px 0px 110px 0px;
-    border-top: solid 4px $saffire-blue0083c0;
-    border-bottom: solid 4px $saffire-blue0083c0;
+    border-top: solid 4px $saffire-blue;
+    border-bottom: solid 4px $saffire-blue;
 }
 
 .owl-content {
@@ -196,7 +203,7 @@ div.owl-dots {
 }
 
 .owl-dot.active {
-    background: $saffire-blue0083c0 !important;
+    background: $saffire-blue !important;
 }
 
 .content {
@@ -230,7 +237,7 @@ p {
 #angled-background {
     width: 500px;
     height: 290px;
-    background: $saffire-blue0083c0;
+    background: $saffire-blue;
     left: -.25em;
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
@@ -355,7 +362,7 @@ p {
 
 .card-widget-title {
     width: 230px;
-    background-color: $saffire-blue0083c0;
+    background-color: $saffire-blue;
     height: 45px;
     display: flex;
     flex-direction: row-reverse;
@@ -555,4 +562,8 @@ footer.primary-links {
         right: 37%;
         top: -24%;
       }
+
+      .buttons {
+        flex-direction: column;
+    }
   }

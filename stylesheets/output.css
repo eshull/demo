@@ -95,6 +95,12 @@ a {
   width: 100%;
   background-color: #111111; }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
 .blue-button {
   width: 150px;
   height: 35px;
@@ -465,6 +471,9 @@ footer.primary-links {
 @media only screen and (max-width: 660px) {
   #triangle {
     right: 37%;
-    top: -24%; } }
+    top: -24%; }
+
+  .buttons {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=output.css.map */
