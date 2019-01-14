@@ -245,8 +245,7 @@ p {
   max-width: 280px; }
 
 .image-container img {
-  width: 100%;
-  box-shadow: 0 0 0 5px #0083c0; }
+  width: 100%; }
 
 .responsive {
   width: 100%;
@@ -255,10 +254,17 @@ p {
 #fourth-feature {
   display: grid;
   grid-template-areas: 'big1 big1 small3 small4' 'big1 big1 big2 big2' 'small1 small2 big2 big2';
-  width: auto; }
+  width: auto;
+  z-index: 2;
+  margin-bottom: 5px; }
+
+.card-widget-item {
+  z-index: 3;
+  position: relative; }
 
 .image-container {
-  position: relative; }
+  position: relative;
+  z-index: 0; }
 
 .card-content {
   position: absolute;
@@ -288,10 +294,15 @@ p {
   font-size: 21px; }
 
 .overlay {
-  background-color: #0083c0;
-  opacity: .3;
+  background-color: rgba(0, 255, 0, 0.5);
+  position: absolute;
   height: 100%;
+  width: 100%;
   z-index: 3; }
+
+.color {
+  position: absolute;
+  top: 0px; }
 
 .invisible {
   display: none; }

@@ -292,7 +292,6 @@ p {
 
 .image-container img {
     width: 100%;
-    box-shadow: 0 0 0 5px #0083c0;
   }
 
   .responsive {
@@ -307,6 +306,8 @@ p {
     'big1 big1 big2 big2'
     'small1 small2 big2 big2';
      width: auto;
+     z-index: 2;
+     margin-bottom: 5px;
     //  position: relative;
 }
 // .more-button::after {
@@ -315,8 +316,14 @@ p {
 //     content: "<img src='images/image" counter(div-counter) ".jpeg'>";
 //   }
 
+.card-widget-item {
+    z-index: 3;
+    position: relative;
+}
+
 .image-container {
     position: relative;
+    z-index: 0;
 }
 .card-content {
     position: absolute;
@@ -356,10 +363,19 @@ p {
 // }
 
 .overlay {
-    background-color: #0083c0;
-    opacity: .3;
+    background-color: rgba(0,255,0,0.5);
+    // background: rgba(38, 126, 207, 0.82);
+    // background-color: #0083c0;
+    // opacity: .3;
+    position: absolute;
     height: 100%;
+    width: 100%;
     z-index: 3;
+    // background-image: url(../images/main-bg.jpg);
+}
+.color {
+    position: absolute;
+    top: 0px;
 }
 
 .invisible {
