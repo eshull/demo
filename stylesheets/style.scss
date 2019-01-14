@@ -1,7 +1,6 @@
-$background-color: lightgrey;
+$background-color: #1a1d1f;
 $font: 'Open Sans', sans-serif;
 $saffire-blue: #0083c0;
-$pic-border: solid 4px #0083c0;
 
 body {
     background-color: $background-color;
@@ -86,7 +85,7 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     height: inherit;
-    background-image: linear-gradient(black, transparent);
+    background-image: linear-gradient(#111111, transparent);
     z-index: 5;
   }
 
@@ -116,7 +115,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    background-color: #111111;
   }
 
   .blue-button {
@@ -308,17 +307,12 @@ p {
      width: auto;
      z-index: 2;
      margin-bottom: 5px;
-    //  position: relative;
 }
-// .more-button::after {
-//     /* Increment "my-sec-counter" by 1 */
-//     counter-increment: div-counter;
-//     content: "<img src='images/image" counter(div-counter) ".jpeg'>";
-//   }
 
 .card-widget-item {
     z-index: 0;
     position: relative;
+    overflow: hidden;
 }
 
 .image-container {
@@ -327,24 +321,17 @@ p {
 }
 .card-content {
     position: absolute;
-    // top: 20px;
     color: white;
     font-family: $font;
     width: 100%;
     height: 150%;
     text-align: center;
-    // margin-left: 25%;
     justify-content: center;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     font-size: 12px;
     z-index: 4;
-    // -webkit-transition: all 0.5s ease;
-    // -moz-transition: all 0.5s ease;
-    // -o-transition: all 0.5s ease;
-    // transition: all 0.5s ease;
-
 }
 
 .card-widget-title {
@@ -356,7 +343,6 @@ p {
     align-self: end;
     align-items: center;
     padding-right: 28px;
-    // position: absolute;
     right: 10%;
     bottom: 10%;
     opacity: .85;
@@ -364,21 +350,12 @@ p {
     z-index: 1;
 }
 
-// first and last
-// .card-content{
-//     height: 150%;
-// }
-
 .overlay {
     background-color: rgba(47, 150, 219, 0.719);
-    // background: rgba(38, 126, 207, 0.82);
-    // background-color: #0083c0;
-    // opacity: .3;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 3;
-    // background-image: url(../images/main-bg.jpg);
 }
 .color {
     position: absolute;
@@ -487,6 +464,18 @@ footer {
           display: initial;
       }
 
+      #main-feature {
+          width: 70%;
+      }
+
+      #main-feature h1 {
+          font-size: 35px;
+      }
+
+      #main-feature p {
+        font-size: 12px;
+    }
+
       .container {
           display: flex;
           flex-direction: column;
@@ -495,10 +484,18 @@ footer {
           overflow: hidden;
       }
 
+      .owl-container {
+          width: 80%;
+      }
+
       #fourth-feature {
           display: flex;
           flex-direction: column;
           align-items: center;
+      }
+
+      #fourth-feature p {
+          width: 40%;
       }
 
       footer {

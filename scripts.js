@@ -6,7 +6,6 @@ $(document).ready(function() {
         items: 1,
         singleItem: true,
         nav: true
-        
     });
 
     // Search hover
@@ -23,11 +22,11 @@ $(document).ready(function() {
     var sticky = header.offsetTop;
 
     function navChange() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
     }
     
     // layout for fourth feature
@@ -39,56 +38,32 @@ $(document).ready(function() {
     $( "#fourth-feature div:nth-child(5)" ).css( {"grid-area": "small4", "background-image": "url(images/image5.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0"} );
     $( ".card-widget-item" ).last( "div" ).css( {"grid-area": "big2", "background-image": "url(images/image6.jpeg)", "background-size": "contain", "box-shadow": "0 0 0 5px #0083c0"} );
 
-    // $('#fourth-feature div:nth-child(1) div div').html("<img src='images/image1.jpeg'>")
-
-    // console.log($( "#fourth-feature.card-content" ));
-    
-    // $( "div.card-content" ).html("<img src='images/image1.jpeg'>");
-    // insert images background-image:url(../images/main-bg.jpg);
+    // insert images as placeholders
     var i = 0
     do {
          i++
          $('#fourth-feature div:nth-child(' + i + ') div div').after("<img src='images/image" + i + ".jpeg' style='visibility: hidden;'>");
-        // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".more-button" ).after("<img src='images/image" + i + ".jpeg'>");
-        // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-widget-item" ).html("<img src='images/image" + i + ".jpeg'>");
-        // $( "#fourth-feature div:nth-child(" + i + ")" ).find( ".card-content" ).insert("<img src='images/image" + i + ".jpeg'>");
-        // $("<img src='images/image" + i + ".jpeg'>").insertAfter( "#fourth-feature div:nth-child(" + i + ")" ).find( "a" );
-       
     } while (i < 7);
 
     // on hover for images
 
-    // $("p").hover(function(){
-    //     $(this).css("background-color", "yellow");
-    //     }, function(){
-    //     $(this).css("background-color", "pink");
-    //   });
     $("#fourth-feature p").hide();
     $("#fourth-feature a").hide();
     $( "<div class='color'></div>" ).appendTo( ".card-content" );
 
       $(".card-widget-item").hover(function(){
         $(this).find(".color").addClass("overlay");
-        // $(this).find("span").addClass("invisible")
         $(this).find(".card-content").css({"height": "100%", "flex-display": "column" });
         $(this).find("p").show()
         $(this).find("a").show()
         $(this).find("span").hide()
         }, function(){
         $(this).find(".color").removeClass("overlay");
-        // $(this).find("span").removeClass("invisible")
-        // $(this).find("p").removeClass("visible")
         $(this).find(".card-content").css({"height": "150%", "flex-display": "column-reverse" });
         $(this).find("p").hide()
         $(this).find("a").hide()
         $(this).find("span").show()
       });
-
-    // $(".card-widget-item").hover(function(){
-    //     $('.image-container').animate({opacity: ".85"});
-    //     }, function(){
-    //     $('.image-container').animate({opacity: "1"});
-    // });
 
     // ajax call
 

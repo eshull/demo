@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: #1a1d1f;
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   height: inherit;
-  background-image: linear-gradient(black, transparent);
+  background-image: linear-gradient(#111111, transparent);
   z-index: 5; }
 
 #main-feature {
@@ -93,7 +93,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black; }
+  background-color: #111111; }
 
 .blue-button {
   width: 150px;
@@ -260,7 +260,8 @@ p {
 
 .card-widget-item {
   z-index: 0;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .image-container {
   position: relative;
@@ -392,6 +393,15 @@ footer {
     top: 20px;
     display: initial; }
 
+  #main-feature {
+    width: 70%; }
+
+  #main-feature h1 {
+    font-size: 35px; }
+
+  #main-feature p {
+    font-size: 12px; }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -399,10 +409,16 @@ footer {
     width: 100%;
     overflow: hidden; }
 
+  .owl-container {
+    width: 80%; }
+
   #fourth-feature {
     display: flex;
     flex-direction: column;
     align-items: center; }
+
+  #fourth-feature p {
+    width: 40%; }
 
   footer {
     flex-direction: column; }
