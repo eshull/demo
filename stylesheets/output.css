@@ -45,7 +45,11 @@ a {
   text-decoration: none; }
 
 #form {
-  width: 0px; }
+  display: none; }
+
+.hover {
+  display: initial;
+  width: 100px !important; }
 
 #logo {
   position: absolute;

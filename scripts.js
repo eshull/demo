@@ -9,14 +9,29 @@ $(document).ready(function() {
 
     // Search hover
     $("#search").hover(function(){
-        if (this.width == "0px") {
-            $('#form').animate({width: "70px"});
+        console.log("hovering");
+        if ($('#form').hasClass('hover')) {
+            $("#form").removeClass("hover");
+            $('#form').css('display', 'none')
+        } else {
+            $('#form').css('display', 'initial')
+            $("#form").addClass("hover");
         }
         
+        // $('#form').animate({width: "70px"});
+        
+        
         }, function(){
-            if (this.width == "70px") {
-                $('#form').animate({width: "0px"});
+            if ($('#form').hasClass('hover')) {
+                $('#form').css('display', 'initial')
+                $("#form").addClass("hover");
+            } else {
+                $("#form").removeClass("hover");
+                $('#form').css('display', 'none')
             }
+            
+            // $('#form').animate({width: "0px"});
+            
         
     });
 
